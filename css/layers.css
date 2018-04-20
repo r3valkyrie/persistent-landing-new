@@ -29,6 +29,12 @@
     background-position: center;
 }
 
+.narnar img {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
 .layer-2 {
     background: url('../assets/layer2.png');
 }
