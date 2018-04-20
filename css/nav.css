@@ -9,6 +9,7 @@
     padding: 0;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 #li-logo {
   background-color: rgb(50,50,50);
@@ -27,7 +28,7 @@
   padding: 10px;
   text-align: left;
 }
-.nav a {
+.nav ul a {
     height: 100%;
     width: 100%;
     font-family: 'Roboto Condensed';
@@ -37,6 +38,6 @@
     transition: box-shadow 0.2s;
     -webkit-transition: box-shadow 0.2s;
 }
-.nav a:hover {
+.nav ul a:hover {
   box-shadow: inset 300px 0 0 0 rgb(70,70,70);
 }

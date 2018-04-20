@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+  .nav,
+  .navbuttons li,
+  .pulls {
+    width: 100%;
+    min-width: 100%;
+  }
+  .navbuttons ul {
+    height: 80px;
+  }
+  .navbuttons li {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .navbuttons ul a:hover {
+    box-shadow: inset 100% 0 0 0 rgb(70,70,70);
+  }
+  .narnar img {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 675px) {
+  .pulls {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 750px) and (max-width: 600px) {
+  .pulls {
+    display: none;
+  }
+}
