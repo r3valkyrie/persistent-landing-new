@@ -1,0 +1,32 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.space {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.layer,
+.layer img {
+    position: absolute;
+    left: -5%;
+    z-index: -100;
+    width: 110%;
+}
+
+
+.layer img {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}

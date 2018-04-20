@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/parallax.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link rel="stylesheet" type="text/css" href="css/layers.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+
+    <script src="js/parallax.min.js"></script>
 </head>
 <body>
-<ul>
-    <li class="parallax-layer"></li>
-    <li class="parallax-layer"></li>
-</ul>
+
+<div id="space">
+
+    <div class='layer noselect' data-depth="0.2"><img src="assets/layer1.png"></div>
+    <div class='layer noselect' data-depth="0.6"><img src="assets/layer2.png"></div>
+    <div class="nav">
+        <ul>
+            <li>Forum</li>
+            <li>Wiki</li>
+            <li>JOIN NOW</li>
+            <li>Github</li>
+            <li>Discord</li>
+        </ul>
+    </div>
+</div>
+<script>
+    var space = document.getElementById('space');
+    var parallaxInstance = new Parallax(space);
+</script>
+
 
 </body>
 </html>
