@@ -1,7 +1,42 @@
 .nav {
+    height: 100%;
+    width: 300px;
+    background-color: rgb(20,20,20,0.6);
+    position: absolute;
     text-align: center;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+#li-logo {
+  background-color: rgb(50,50,50);
 }
 .nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 60px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-left;
+}
+.nav li {
+  padding: 10px;
+  text-align: left;
+}
+.nav a {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Condensed';
+    font-size: 26px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s;
+}
+.nav a:hover {
+  box-shadow: inset 300px 0 0 0 rgb(70,70,70);
 }

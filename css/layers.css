@@ -9,7 +9,7 @@
 }
 
 #space {
-    position: absolute;
+    position: fixed;
     height: 110%;
     width: 110%;
     top: -5%;

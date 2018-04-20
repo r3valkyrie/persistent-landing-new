@@ -7,16 +7,31 @@
     <link rel="stylesheet" type="text/css" href="css/page.css">
     <link rel="stylesheet" type="text/css" href="css/layers.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/pulls.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+
 
     <script src="js/parallax.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div id="space">
     <div class='layer layer-1 noselect' data-depth="0.2">&nbsp;</div>
     <div class='layer layer-2 noselect' data-depth="0.6">&nbsp;</div>
+</div>
+<div class='nav'>
+  <ul>
+    <li id='li-logo'><img src='assets/logo.svg' height="40px"></li>
+    <a href='#'><li>FORUMS</li></a>
+    <a href='#'><li>WIKI</li></a>
+    <a href='#'><li>DISCORD</li></a>
+    <a href='#'><li>GITHUB</li></a>
+  </ul>
+  <div class='pulls'>
+    <script src='js/fetchGitJson.js'></script>
+  </div>
 </div>
 <script>
     var space = document.getElementById('space');
