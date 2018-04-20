@@ -8,25 +8,27 @@
                                   supported by Chrome and Opera */
 }
 
-.space {
+#space {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -100;
+    top: -10%;
+    left: -10%;
+    height: 100%;
+    width: 100%;
 }
-.layer,
-.layer img {
-    position: absolute;
-    left: -5%;
-    z-index: -100;
-    width: 110%;
+.layer {
+    height: 120%;
+    width: 120%;
+    background-repeat: repeat;
+    top: -10%;
+    left: -10%;
+    z-index: -101;
 }
 
+.layer-1 {
+    background: url('../assets/layer1.png');
+    background-size: 90% 90%;
+}
 
-.layer img {
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: pixelated;
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -moz-crisp-edges;
+.layer-2 {
+    background: url('../assets/layer2.png');
 }
