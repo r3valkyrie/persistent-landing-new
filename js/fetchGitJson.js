@@ -1,6 +1,7 @@
 $.getJSON("https://api.github.com/repos/Persistent-SS13/Persistent-Bay/pulls?state=closed", function(data) {
     var items = [];
     var mergeStatus = '';
+    $('.pulls .throbber-loader').remove();
     $.each(data, function(key, val) {
         if (key < 5) {
             if (data[key]['merged_at'] == null) {

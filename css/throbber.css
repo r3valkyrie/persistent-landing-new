@@ -1,0 +1,83 @@
+/* Copyright (c) 2013 John W. Long and Julia Elman
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * Source: https://github.com/jlong/css-spinners
+ */
+
+@-moz-keyframes throbber-loader {
+  0% {
+    background: hsla(210, 17%, 89%, 0.1);
+  }
+  10% {
+    background: hsl(196, 68%, 39%);
+  }
+  40% {
+    background: hsla(210, 17%, 89%, 0.1);
+  }
+}
+@-webkit-keyframes throbber-loader {
+  0% {
+    background: hsla(210, 17%, 89%, 0.1);
+  }
+  10% {
+    background: hsl(196, 68%, 39%);
+  }
+  40% {
+    background: hsla(210, 17%, 89%, 0.1);
+  }
+}
+@keyframes throbber-loader {
+  0% {
+    background: hsla(210, 17%, 89%, 0.1);
+  }
+  10% {
+    background: hsl(196, 68%, 39%);
+  }
+  40% {
+    background: hsla(210, 17%, 89%, 0.1);
+  }
+}
+/* :not(:required) hides these rules from IE9 and below */
+.throbber-loader:not(:required) {
+  -moz-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 300ms infinite ease-out;
+  animation: throbber-loader 2000ms 300ms infinite ease-out;
+  background: hsla(210, 17%, 89%, 0.1);
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 0.9em;
+  height: 1.5em;
+  margin: 0 1.6em;
+}
+.throbber-loader:not(:required):before, .throbber-loader:not(:required):after {
+  background: hsla(210, 17%, 89%, 0.1);
+  content: '\x200B';
+  display: inline-block;
+  width: 0.9em;
+  height: 1.5em;
+  position: absolute;
+  top: 0;
+}
+.throbber-loader:not(:required):before {
+  -moz-animation: throbber-loader 2000ms 150ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 150ms infinite ease-out;
+  animation: throbber-loader 2000ms 150ms infinite ease-out;
+  left: -1.6em;
+}
+.throbber-loader:not(:required):after {
+  -moz-animation: throbber-loader 2000ms 450ms infinite ease-out;
+  -webkit-animation: throbber-loader 2000ms 450ms infinite ease-out;
+  animation: throbber-loader 2000ms 450ms infinite ease-out;
+  right: -1.6em;
+}
