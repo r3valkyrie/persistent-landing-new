@@ -1,5 +1,5 @@
 .nav {
-    min-height: 100%;
+    min-height: 100vh;
     min-width: 300px;
     background-color: rgb(20,20,20,0.6);
     position: absolute;
@@ -40,4 +40,27 @@
 }
 .nav ul a:hover {
   box-shadow: inset 300px 0 0 0 rgb(70,70,70);
+}
+
+.nav .pr-pointer {
+  display: none;
+  position: absolute;
+  bottom: 360px;
+  left: 0;
+  right: 0;
+}
+
+.pr-pointer .arrows {
+  position: relative;
+  animation: bob infinite alternate-reverse 300ms;
+}
+
+@keyframes bob {
+  0% {
+    top: 3px;
+  }
+
+  100% {
+    top: -3px;
+  }
 }
