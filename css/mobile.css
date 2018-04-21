@@ -1,4 +1,10 @@
 @media only screen and (max-width: 600px) {
+  .nav {
+    padding-bottom: 350px;
+  }
+  .nav .pr-pointer {
+    display: block;
+  }
   .nav,
   .navbuttons li {
     width: 100%;
@@ -15,18 +21,6 @@
     box-shadow: inset 100% 0 0 0 rgb(70,70,70);
   }
   .narnar img {
-    display: none;
-  }
-}
-
-@media only screen and (max-height: 675px) {
-  .pulls {
-    display: none;
-  }
-}
-
-@media only screen and (max-height: 750px) and (max-width: 600px) {
-  .pulls {
     display: none;
   }
 }
